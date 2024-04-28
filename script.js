@@ -22,7 +22,7 @@ string.addEventListener("mouseleave", function (eve) {
   gsap.to("path", {
     attr: { d: finalpath },
     duration: 2.5,
-    ease: "elastic.out(1,0.3)",
+    ease: "elastic.out(1,0.1)",
   });
   gsap.to("#cursor", {
     scale: 1,
@@ -34,7 +34,7 @@ main.addEventListener("mousemove", function (event) {
     x: event.clientX,
     y: event.clientY,
     duration: 1,
-    ease: "elastic.out(1,0.3)",
+    ease: "sine.out",
     borderRadius: "50%",
   });
 });
